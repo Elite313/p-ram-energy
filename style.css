@@ -1,0 +1,1316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
+    background-color: #000;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+  }
+  
+  .logo-link {
+    text-decoration: none;
+    padding-left: 0;
+  }
+  
+  .logo-text {
+    color: #00174E;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    color: #00174E;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+  }
+  
+  .nav-links .active,
+  .nav-links a:hover {
+    color: #FFD400;
+    font-weight: bold;
+  }
+  
+  .contact-btn {
+    background-color: #FFD400;
+    color: #00174E;
+    padding: 10px 18px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .hero {
+    height: 100vh;
+    background: url('pexels-pixabay-532192.jpg') center center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 80px;
+  }
+  
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 24, 77, 0.8);
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+  }
+  
+  .hero h1 {
+    font-size: 60px;
+    line-height: 1.3;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+  
+  .hero .light-text {
+    color: white;
+  }
+  
+  .hero .bold-yellow {
+    color: #FFD400;
+  }
+  
+  .hero p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #ccc;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .btn {
+    padding: 12px 24px;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  
+  .yellow-btn {
+    background-color: #FFD400;
+    color: #00174E;
+  }
+  
+  .white-outline-btn {
+    border: 2px solid white;
+    color: white;
+    background: transparent;
+  }
+  
+  .white-outline-btn:hover {
+    background: white;
+    color: #00174E;
+  }
+  
+  /* Business Divisions Section */
+.business-divisions {
+    background: #f9fbfc;
+    color: #00174E;
+    padding: 60px 30px;
+    text-align: center;
+  }
+  
+  .business-divisions h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .business-divisions .highlight {
+    color: #0C4F9C;
+  }
+  
+  .business-divisions .subtitle {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: #333;
+  }
+  
+  .business-divisions {
+    background: #f9fbfc;
+    color: #00174E;
+    padding: 60px 30px;
+    text-align: center;
+  }
+  
+  .business-divisions h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .business-divisions .highlight {
+    color: #0C4F9C;
+  }
+  
+  .business-divisions .subtitle {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: #333;
+  }
+  
+  .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  
+  .card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Top color bars for each card */
+  .card.petroleum {
+    border-top: 6px solid #0B66A3;
+  }
+  
+  .card.agriculture {
+    border-top: 6px solid #1D8F54;
+  }
+  
+  .card.pharmex {
+    border-top: 6px solid #2178D6;
+  }
+  
+  .card img {
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+  background-color: rgb(239, 205, 255)
+  }
+  
+  .card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  .card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #00174E;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  
+  /* Footer */
+  .main-footer {
+    background-color: #00174E;
+    color: white;
+    padding: 50px 30px 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-column {
+    flex: 1 1 200px;
+  }
+  
+  .footer-column h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-column p,
+  .footer-column li {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.6;
+  }
+  
+  .footer-column li {
+    list-style: none;
+    margin-bottom: 8px;
+  }
+  
+  .footer-column a {
+    color: #ccc;
+    text-decoration: none;
+  }
+  
+  .footer-column a:hover {
+    text-decoration: underline;
+  }
+  
+  .gold {
+    color: #FFD400;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #263a5c;
+    margin-top: 40px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+  }
+  
+  .footer-links {
+    margin-top: 10px;
+  }
+  
+  .footer-links a {
+    color: #aaa;
+    margin: 0 10px;
+  }
+  /* Impact Section */
+.impact-section {
+    background: linear-gradient(to right, #062f69, #086fb7);
+    color: white;
+    padding: 80px 30px;
+    text-align: center;
+  }
+  
+  .impact-section h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+  }
+  
+  .highlight-gold {
+    color: #FFD400;
+    border-bottom: 3px solid #FFD400;
+  }
+  
+  .impact-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 60px;
+  }
+  
+  .impact-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 30px;
+    width: 200px;
+    min-height: 150px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .impact-card h3 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #FFD400, #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .impact-card p {
+    font-size: 14px;
+    color: #ddd;
+  }
+  
+  /* CTA block */
+  .cta-block {
+    margin-top: 60px;
+  }
+  
+  .cta-block h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: 700;
+  }
+  
+  .cta-block p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #eee;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .cta-buttons .btn {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s ease;
+  }
+  
+  .cta-buttons .yellow-btn {
+    background-color: #FFD400;
+    color: #00174E;
+  }
+  
+  .cta-buttons .white-outline-btn {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+  }
+  
+  .cta-buttons .white-outline-btn:hover {
+    background: #fff;
+    color: #00174E;
+  }
+  /* About Section */
+.about-section {
+    padding: 80px 30px;
+    background-color: #f5f8fc;
+  }
+  
+  .about-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .about-text {
+    flex: 1 1 500px;
+  }
+  
+  .about-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #00174E;
+  }
+  
+  .about-text p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .about-text .highlight {
+    color: #0C4F9C;
+  }
+  
+  .about-image {
+    flex: 1 1 400px;
+  }
+  
+  .about-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+  }
+  
+  /* Small Hero */
+.small-hero {
+    padding: 100px 30px;
+    text-align: center;
+    background: linear-gradient(to right, #062f69, #086fb7);
+    color: white;
+    margin-top: 80px;
+  }
+  .small-hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  .small-hero p {
+    font-size: 16px;
+    color: #ccc;
+  }
+  
+  /* Overview */
+  .overview-section {
+    padding: 60px 30px;
+    background-color: white;
+  }
+  .overview-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .overview-left {
+    flex: 2;
+  }
+  .overview-right {
+    flex: 1;
+  }
+  .highlight-box {
+    background: #f1f3f6;
+    padding: 20px;
+    border-radius: 12px;
+  }
+  .highlight-box h3 {
+    margin-bottom: 15px;
+  }
+  .highlight-box ul {
+    padding-left: 20px;
+    color: #333;
+  }
+  
+  /* ========= Global Styles ========= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #fff;
+    color: #00174E;
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  /* ========= Container ========= */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* ========= Navbar ========= */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar .logo a {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .nav-links a {
+    margin-left: 20px;
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+  }
+  
+  .nav-links .active,
+  .nav-links a:hover {
+    color: #FFD400;
+    font-weight: bold;
+  }
+  
+  /* 🌐 PETROLEUM PAGE STYLES */
+
+/* Hero */
+.petroleum-hero {
+    background: linear-gradient(to right, #001a45, #0c63b4);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    margin-top: 80px;
+  }
+  
+  .petroleum-hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .petroleum-hero p {
+    font-size: 16px;
+    color: #ccc;
+  }
+  
+  /* Overview */
+  .petroleum-overview {
+    padding: 60px 0;
+  }
+  
+  .petroleum-overview .overview-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+  }
+  
+  .petroleum-overview .overview-text {
+    flex: 2;
+  }
+  
+  .petroleum-overview .overview-highlights {
+    flex: 1;
+    background-color: #f1f3f6;
+    padding: 20px 25px;
+    border-radius: 12px;
+  }
+  
+  .petroleum-overview .overview-highlights h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  .petroleum-overview .overview-highlights ul li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Services */
+  .petroleum-services {
+    background-color: #f9fbfc;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .petroleum-services .section-subtitle {
+    margin-bottom: 40px;
+    color: #444;
+    font-size: 16px;
+  }
+  
+  .petroleum-services .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+  }
+  
+  .petroleum-services .service-card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    transition: transform 0.3s ease;
+  }
+  
+  .petroleum-services .service-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .petroleum-services .service-card img {
+    height: 40px;
+    margin-bottom: 15px;
+  }
+  
+  .petroleum-services .service-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Portfolio */
+  .petroleum-portfolio {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .petroleum-portfolio .portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .petroleum-portfolio .portfolio-box {
+    background-color: #f6f8fa;
+    border-radius: 12px;
+    padding: 20px;
+    width: 260px;
+    text-align: left;
+  }
+  
+  .petroleum-portfolio .portfolio-box h3 {
+    background-color: #0c63b4;
+    color: white;
+    padding: 10px 15px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin: -20px -20px 15px;
+    font-size: 16px;
+  }
+  
+  /* Market Trends */
+  .petroleum-trends {
+    padding: 60px 20px;
+    background-color: #f9fbfc;
+    text-align: center;
+  }
+  
+  .petroleum-trends em {
+    color: #0c63b4;
+    font-style: italic;
+  }
+  
+  /* Responsive Fixes */
+  @media (max-width: 768px) {
+    .petroleum-overview .overview-flex {
+      flex-direction: column;
+    }
+  
+    .petroleum-services .service-card,
+    .petroleum-portfolio .portfolio-box {
+      width: 100%;
+    }
+  }
+ /* 🌱 Agriculture Page Styles */
+
+.agriculture-hero {
+    background: linear-gradient(to right, #03452c, #1ea367);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    margin-top: 80px;
+  }
+  
+  .highlight-green {
+    color: #1ea367;
+  }
+  
+  .agriculture-overview {
+    padding: 60px 0;
+  }
+  
+  .agriculture-overview .overview-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+  }
+  
+  .agriculture-overview .overview-text {
+    flex: 2;
+  }
+  
+  .agriculture-overview .overview-highlights {
+    flex: 1;
+    background-color: #f1f3f6;
+    padding: 20px 25px;
+    border-radius: 12px;
+  }
+  
+  .agriculture-overview .overview-highlights h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  .agriculture-overview .overview-highlights ul li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Services Section */
+  .agriculture-services {
+    background-color: #f9fbfc;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .agriculture-services .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  /* Portfolio Section */
+  .agriculture-portfolio {
+    background-color: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .agriculture-portfolio .portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .agriculture-portfolio .portfolio-box {
+    background: #f6f8fa;
+    border-radius: 12px;
+    padding: 20px;
+    width: 260px;
+    text-align: left;
+  }
+  
+  .agriculture-portfolio .green-theme h3 {
+    background-color: #1ea367;
+    color: white;
+    padding: 10px 15px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin: -20px -20px 15px;
+    font-size: 16px;
+  }
+  
+  /* Sustainability Section */
+  .agriculture-sustainability {
+    padding: 60px 20px;
+    background-color: #f9fbfc;
+    text-align: center;
+  }
+  
+  .agriculture-sustainability .sustainability-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .agriculture-sustainability .service-card {
+    flex: 1 1 300px;
+  }
+  /* 💊 Pharmex Page Styles */
+
+    .pharmex-hero h1 {
+        font-size: 90px;
+        background: linear-gradient(to right, #c4f1d5, #52da62);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text; /* For Firefox */
+        color: transparent;     /* fallback */
+  }
+.pharmex-hero {
+    background: linear-gradient(to right, #566fc6, #87c1e8);
+    padding: 100px 20px;
+    text-align: center;
+    margin-top: 80px;
+  }
+  
+  .highlight-purple {
+    color: #50a7e3;
+  }
+  
+  .pharmex-overview {
+    padding: 60px 0;
+  }
+  
+  .pharmex-overview .overview-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+  }
+  
+  .pharmex-overview .overview-text {
+    flex: 2;
+  }
+  
+  .pharmex-overview .overview-highlights {
+    flex: 1;
+    background-color: #f1f3f6;
+    padding: 20px 25px;
+    border-radius: 12px;
+  }
+  
+  .pharmex-overview .overview-highlights h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  .pharmex-overview .overview-highlights ul li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Services */
+  .pharmex-services {
+    background-color: #f9fbfc;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .pharmex-services .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .pharmex-services .service-card,
+  .pharmex-quality .service-card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    transition: transform 0.3s ease;
+  }
+  
+  .pharmex-services .service-card:hover,
+  .pharmex-quality .service-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Portfolio */
+  .pharmex-portfolio {
+    background-color: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .pharmex-portfolio .portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .pharmex-portfolio .portfolio-box {
+    background-color: #f6f8fa;
+    border-radius: 12px;
+    padding: 20px;
+    width: 260px;
+    text-align: left;
+  }
+  
+  .pharmex-portfolio .purple-theme h3 {
+    background-color: #50a7e3;
+    color: white;
+    padding: 10px 15px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin: -20px -20px 15px;
+    font-size: 16px;
+  }
+  
+  /* Quality Assurance */
+  .pharmex-quality {
+    padding: 60px 20px;
+    background-color: #f9fbfc;
+    text-align: center;
+  }
+  
+  .pharmex-quality .quality-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .pharmex-quality .service-card {
+    flex: 1 1 300px;
+  }
+  
+  /* CTA (reuse .impact-section styles) */
+  
+  /* Responsive Tweaks */
+  @media (max-width: 768px) {
+    .pharmex-overview .overview-flex,
+    .pharmex-quality .quality-cards {
+      flex-direction: column;
+    }
+  
+    .pharmex-portfolio .portfolio-box {
+      width: 100%;
+    }
+  
+    .pharmex-services .service-card,
+    .pharmex-quality .service-card {
+      width: 100%;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 40px;
+        background-color: #00174E;
+        flex-wrap: wrap;
+      }
+      
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+      
+      .logo-link {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+      }
+      
+      .logo-icon {
+        height: 32px;
+        width: auto;
+        object-fit: contain;
+        display: inline-block;
+      }
+      
+      .logo-text {
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
+        font-family: 'Inter', sans-serif;
+      }
+      
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+      }
+      
+      .contact-btn {
+        background-color: #FFD400;
+        color: #00174E;
+        padding: 10px 18px;
+        border-radius: 4px;
+        font-weight: 600;
+        text-decoration: none;
+      }
+    }
+      
+/* Registration Form Styles */
+.registration-form {
+  padding: 60px 0;
+  background-color: #f5f8fc;
+}
+
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-section {
+  margin-bottom: 40px;
+}
+
+.form-section h2 {
+  color: #00174E;
+  font-size: 24px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: 500;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="number"],
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #00174E;
+  outline: none;
+}
+
+.date-inputs {
+  display: flex;
+  gap: 10px;
+}
+
+.date-inputs input,
+.date-inputs select {
+  flex: 1;
+}
+
+.form-group input[type="file"] {
+  padding: 10px 0;
+}
+
+.terms {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 30px 0;
+}
+
+.terms input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
+.terms label {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.form-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-start;
+}
+
+.form-actions .btn {
+  padding: 12px 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Style for required field indicators */
+.form-group label::after {
+  content: " *";
+  color: #ff4444;
+}
+
+/* Error state */
+.form-group input:invalid,
+.form-group select:invalid,
+.form-group textarea:invalid {
+  border-color: #ff4444;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 20px;
+  }
+
+  .date-inputs {
+    flex-direction: column;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .form-actions .btn {
+    width: 100%;
+  }
+}
+
+/* Membership Plans Overlay */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 23, 78, 0.9);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.popup-content {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 1200px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.popup-content h2 {
+  color: #00174E;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.membership-plans {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.plan {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 30px;
+  width: 300px;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease;
+  border: 2px solid #e9ecef;
+}
+
+.plan:hover {
+  transform: translateY(-5px);
+}
+
+.plan.featured {
+  background: white;
+  border: 2px solid #FFD400;
+  box-shadow: 0 10px 20px rgba(0, 23, 78, 0.1);
+}
+
+.featured-tag {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  background: #FFD400;
+  color: #00174E;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.plan h3 {
+  color: #00174E;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-size: 32px;
+  color: #00174E;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.plan ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px;
+  text-align: left;
+}
+
+.plan ul li {
+  padding: 10px 0;
+  color: #666;
+  border-bottom: 1px solid #e9ecef;
+  position: relative;
+  padding-left: 25px;
+}
+
+.plan ul li:before {
+  content: "✓";
+  color: #00174E;
+  position: absolute;
+  left: 0;
+}
+
+.plan .btn {
+  width: 100%;
+}
+
+/* Responsive adjustments for membership plans */
+@media (max-width: 768px) {
+  .popup-content {
+    padding: 20px;
+  }
+
+  .plan {
+    width: 100%;
+  }
+}
+      
