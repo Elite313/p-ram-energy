@@ -38,21 +38,31 @@ const upload = multer({ storage: storage });
 app.use('/api/vendors', require('./routes/vendorRoutes'));
 app.use('/api/payments', require('./routes/paymentRoutes'));
 
-// Serve static files
-app.use(express.static('public'));
+// Serve static files from root directory
+app.use(express.static(path.join(__dirname)));
 
-// Serve React app in production
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static('client/build'));
-  app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
-  });
-}
+// Serve index.html for the root route
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+// Handle other routes for HTML files
+app.get('/:page', (req, res) => {
+  const page = req.params.page;
+  if (page.endsWith('.html')) {
+    res.sendFile(path.join(__dirname, page));
+  } else {
+    res.sendFile(path.join(__dirname, 'index.html'));
+  }
+});
 
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error(err.stack);
-  res.status(500).send('Something broke!');
+  res.status(500).json({
+    error: 'Something broke!',
+    details: process.env.NODE_ENV === 'development' ? err.message : undefined
+  });
 });
 
 const PORT = process.env.PORT || 3000;
