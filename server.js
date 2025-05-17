@@ -11,6 +11,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+// Serve static files from public directory
+app.use(express.static(path.join(__dirname, 'public')));
 app.use('/uploads', express.static('uploads'));
 
 // MongoDB Connection
@@ -38,21 +41,18 @@ const upload = multer({ storage: storage });
 app.use('/api/vendors', require('./routes/vendorRoutes'));
 app.use('/api/payments', require('./routes/paymentRoutes'));
 
-// Serve static files from root directory
-app.use(express.static(path.join(__dirname)));
-
 // Serve index.html for the root route
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 // Handle other routes for HTML files
 app.get('/:page', (req, res) => {
   const page = req.params.page;
   if (page.endsWith('.html')) {
-    res.sendFile(path.join(__dirname, page));
+    res.sendFile(path.join(__dirname, 'public', page));
   } else {
-    res.sendFile(path.join(__dirname, 'index.html'));
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
   }
 });
 
