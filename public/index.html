@@ -4,146 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>P-Ram Energy</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-
-        body {
-            line-height: 1.6;
-            color: #333;
-        }
-
-        .navbar {
-            background-color: #ffffff;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            padding: 1rem 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #1a1a1a;
-        }
-
-        .nav-links a {
-            color: #333;
-            text-decoration: none;
-            margin-left: 2rem;
-            transition: color 0.3s ease;
-        }
-
-        .nav-links a:hover {
-            color: #ffd700;
-        }
-
-        .hero {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/pexels-magda-ehlers-pexels-2569842.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 80vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-            padding: 0 1rem;
-        }
-
-        .hero-content {
-            max-width: 800px;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-        }
-
-        .cta-button {
-            display: inline-block;
-            padding: 1rem 2rem;
-            background-color: #ffd700;
-            color: #1a1a1a;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: transform 0.3s ease;
-        }
-
-        .cta-button:hover {
-            transform: translateY(-2px);
-        }
-
-        .main-content {
-            padding: 4rem 5%;
-            text-align: center;
-        }
-
-        .main-content h2 {
-            font-size: 2rem;
-            margin-bottom: 2rem;
-            color: #1a1a1a;
-        }
-
-        .footer {
-            background-color: #1a1a1a;
-            color: white;
-            padding: 2rem 5%;
-            text-align: center;
-        }
-
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-            .hero h1 {
-                font-size: 2rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="navbar">
         <div class="logo">P-Ram Energy</div>
         <div class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="petroleum.html">Petroleum</a>
+            <a href="agriculture.html">Agriculture</a>
+            <a href="pharmex.html">Pharmex</a>
+            <a href="vendor-registration.html">Vendor Registration</a>
+            <a href="contact.html">Contact</a>
         </div>
     </nav>
 
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="hero-content">
             <h1>Welcome to P-Ram Energy</h1>
             <p>Your trusted partner in petroleum products, agricultural solutions, and pharmaceutical ingredients.</p>
-            <a href="#contact" class="cta-button">Get Started</a>
+            <a href="vendor-registration.html" class="cta-button">Get Started</a>
         </div>
     </section>
 
-    <section class="main-content">
+    <section class="main-content" id="services">
         <h2>Our Services</h2>
-        <p>We specialize in providing high-quality products and services across multiple industries:</p>
-        <ul style="list-style: none; margin-top: 1rem;">
-            <li style="margin: 1rem 0;">🛢️ Petroleum & Petrochemicals</li>
-            <li style="margin: 1rem 0;">🌾 Agricultural Solutions</li>
-            <li style="margin: 1rem 0;">💊 Pharmaceutical Ingredients</li>
-        </ul>
+        <p class="subtitle">Discover our comprehensive range of solutions across multiple industries</p>
+        
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="service-card">
+                    <div class="service-icon">🛢️</div>
+                    <h3>Petroleum & Petrochemicals</h3>
+                    <p>Global import/export services for petroleum derivatives with comprehensive supply chain solutions. We ensure quality and reliability in every delivery.</p>
+                    <a href="petroleum.html">Learn More →</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🌾</div>
+                    <h3>Agricultural Solutions</h3>
+                    <p>Innovative farming inputs and crop solutions designed to enhance agricultural productivity and sustainability for modern farming needs.</p>
+                    <a href="agriculture.html">Learn More →</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">💊</div>
+                    <h3>Pharmaceutical Ingredients</h3>
+                    <p>Premium pharmaceutical ingredients including Vitamins B9, B12, B3 and other nutraceutical products meeting international quality standards.</p>
+                    <a href="pharmex.html">Learn More →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🔬</div>
+                    <h3>Research & Development</h3>
+                    <p>Cutting-edge research facilities dedicated to developing innovative solutions for the energy and agricultural sectors.</p>
+                    <a href="about.html#research">Learn More →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🌿</div>
+                    <h3>Sustainable Solutions</h3>
+                    <p>Eco-friendly products and processes designed to minimize environmental impact while maximizing efficiency.</p>
+                    <a href="about.html#sustainability">Learn More →</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="carousel-buttons">
+            <button class="carousel-btn" onclick="moveCarousel(-1)">←</button>
+            <button class="carousel-btn" onclick="moveCarousel(1)">→</button>
+        </div>
     </section>
 
     <footer class="footer">
         <p>&copy; 2024 P-Ram Energy. All rights reserved.</p>
     </footer>
+
+    <script>
+        let currentPosition = 0;
+        const carousel = document.querySelector('.carousel');
+        const cards = document.querySelectorAll('.service-card');
+        const cardWidth = 320; // card width + gap
+
+        function moveCarousel(direction) {
+            const maxPosition = -(cards.length - 3) * cardWidth;
+            currentPosition += direction * cardWidth;
+            
+            if (currentPosition > 0) currentPosition = maxPosition;
+            if (currentPosition < maxPosition) currentPosition = 0;
+            
+            carousel.style.transform = `translateX(${currentPosition}px)`;
+        }
+
+        // Auto-slide every 5 seconds
+        setInterval(() => moveCarousel(-1), 5000);
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html> 
