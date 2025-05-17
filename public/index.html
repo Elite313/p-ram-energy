@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>P-Ram Energy</title>
+    <title>P-Ram Energy - Your Energy Solutions Partner</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">P-Ram Energy</div>
+        <a href="index.html" class="logo">P-Ram Energy</a>
         <div class="nav-links">
             <a href="index.html" class="active">Home</a>
             <a href="about.html">About</a>
@@ -22,9 +23,9 @@
 
     <section class="hero" id="home">
         <div class="hero-content">
-            <h1>Welcome to P-Ram Energy</h1>
-            <p>Your trusted partner in petroleum products, agricultural solutions, and pharmaceutical ingredients.</p>
-            <a href="vendor-registration.html" class="cta-button">Get Started</a>
+            <h1>Powering Tomorrow's Solutions</h1>
+            <p>Your trusted partner in petroleum products, agricultural solutions, and pharmaceutical ingredients. Experience innovation and reliability in every service.</p>
+            <a href="vendor-registration.html" class="cta-button">Join Our Network</a>
         </div>
     </section>
 
@@ -85,7 +86,7 @@
         let currentPosition = 0;
         const carousel = document.querySelector('.carousel');
         const cards = document.querySelectorAll('.service-card');
-        const cardWidth = 320; // card width + gap
+        const cardWidth = 325; // Updated width + gap
 
         function moveCarousel(direction) {
             const maxPosition = -(cards.length - 3) * cardWidth;
@@ -108,6 +109,14 @@
                     behavior: 'smooth'
                 });
             });
+        });
+
+        // Add active class to current nav link
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            if (link.getAttribute('href') === currentPage) {
+                link.classList.add('active');
+            }
         });
     </script>
 </body>
