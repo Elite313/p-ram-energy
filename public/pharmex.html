@@ -6,6 +6,7 @@
   <title>Pharmaceutical Solutions - P-Ram Energy</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
@@ -24,82 +25,345 @@
   </nav>
 
   <!-- Hero Section -->
-  <header class="page-header">
-    <h1>Pharmaceutical Excellence</h1>
-    <p>Premium pharmaceutical ingredients and nutraceutical solutions for global healthcare needs</p>
-  </header>
+  <section class="pharmex-hero">
+    <div class="hero-content-wrapper">
+      <div class="hero-text-container">
+        <div class="company-badge">
+          <i class="fas fa-star-of-life"></i>
+          <span>Pharmaceutical Excellence</span>
+        </div>
+        <h1 class="hero-title">
+          Ready to Transform<br>
+          <em>Healthcare?</em>
+        </h1>
+        <p class="hero-description">
+          Pioneering healthcare innovation through cutting-edge pharmaceutical development and research
+        </p>
+        <div class="hero-cta">
+          <a href="contact.html" class="cta-button">
+            Contact Us
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-images-container">
+        <div class="hero-image primary">
+          <img src="images/phar-1.png" alt="Pharmaceutical Research" class="hero-img">
+        </div>
+        <div class="hero-image secondary">
+          <img src="images/phar-2.png" alt="Pharmaceutical Laboratory" class="hero-img">
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Overview Section -->
-  <section class="content-section">
-    <div class="service-grid">
-      <div class="service-item">
-        <div class="service-icon">💊</div>
-        <h3>Vitamin Solutions</h3>
-        <p>High-quality vitamins B9, B12, B3, and other essential nutrients meeting international pharmaceutical standards.</p>
+  <section class="pharmex-overview section-padding">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Advancing Healthcare Through Innovation</h2>
+        <p class="section-subtitle">At P-Ram Pharmex, we're dedicated to advancing healthcare through innovative pharmaceutical solutions, cutting-edge research, and global collaboration.</p>
       </div>
-
-      <div class="service-item">
-        <div class="service-icon">🧬</div>
-        <h3>Active Ingredients</h3>
-        <p>Pharmaceutical-grade active ingredients for various medical and healthcare applications.</p>
-      </div>
-
-      <div class="service-item">
-        <div class="service-icon">🌿</div>
-        <h3>Nutraceuticals</h3>
-        <p>Natural and synthetic nutraceutical ingredients for dietary supplements and functional foods.</p>
-      </div>
-
-      <div class="service-item">
-        <div class="service-icon">🔬</div>
-        <h3>Research Support</h3>
-        <p>Technical expertise and research support for pharmaceutical product development.</p>
+      <div class="overview-features">
+        <div class="feature-card">
+          <i class="fas fa-flask"></i>
+          <h3>Research & Development</h3>
+          <p>State-of-the-art facilities and expert teams driving pharmaceutical innovation</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-industry"></i>
+          <h3>Manufacturing Excellence</h3>
+          <p>World-class manufacturing facilities meeting global quality standards</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-globe-americas"></i>
+          <h3>Global Distribution</h3>
+          <p>Extensive network ensuring reliable pharmaceutical supply worldwide</p>
+        </div>
       </div>
     </div>
+  </section>
 
-    <div class="features-section">
-      <h2>Why Choose Our Pharmaceutical Solutions?</h2>
-      <div class="features-grid">
-        <div class="feature">
-          <h3>Quality Assurance</h3>
-          <p>Stringent quality control processes ensuring compliance with international pharmaceutical standards.</p>
+  <!-- Solutions Section -->
+  <section id="solutions" class="pharmex-solutions parallax-section">
+    <div class="parallax-overlay solution-overlay"></div>
+    <div class="container">
+      <h2 class="section-title text-center text-white">Our Solutions</h2>
+      <p class="section-subtitle text-center text-white">Comprehensive pharmaceutical solutions tailored to modern healthcare needs</p>
+      <div class="solutions-grid">
+        <div class="solution-card">
+          <div class="solution-icon">
+            <i class="fas fa-microscope"></i>
+          </div>
+          <h3>Research & Development</h3>
+          <p>Cutting-edge pharmaceutical research and development services</p>
+          <ul class="solution-features">
+            <li><i class="fas fa-check"></i> Drug Discovery</li>
+            <li><i class="fas fa-check"></i> Clinical Trials</li>
+            <li><i class="fas fa-check"></i> Formulation Development</li>
+            <li><i class="fas fa-check"></i> Analytical Services</li>
+          </ul>
+          <a href="contact.html" class="solution-link">Learn More <i class="fas fa-arrow-right"></i></a>
         </div>
-        <div class="feature">
-          <h3>Research Backed</h3>
-          <p>Products developed through extensive research and validated by scientific studies.</p>
+        <div class="solution-card">
+          <div class="solution-icon">
+            <i class="fas fa-pills"></i>
+          </div>
+          <h3>Manufacturing</h3>
+          <p>State-of-the-art pharmaceutical manufacturing capabilities</p>
+          <ul class="solution-features">
+            <li><i class="fas fa-check"></i> API Manufacturing</li>
+            <li><i class="fas fa-check"></i> Quality Control</li>
+            <li><i class="fas fa-check"></i> Packaging Solutions</li>
+            <li><i class="fas fa-check"></i> Supply Chain Management</li>
+          </ul>
+          <a href="contact.html" class="solution-link">Learn More <i class="fas fa-arrow-right"></i></a>
         </div>
-        <div class="feature">
+        <div class="solution-card">
+          <div class="solution-icon">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <h3>Regulatory Affairs</h3>
+          <p>Comprehensive regulatory compliance and documentation services</p>
+          <ul class="solution-features">
+            <li><i class="fas fa-check"></i> Global Compliance</li>
+            <li><i class="fas fa-check"></i> Documentation</li>
+            <li><i class="fas fa-check"></i> Quality Assurance</li>
+            <li><i class="fas fa-check"></i> Regulatory Strategy</li>
+          </ul>
+          <a href="contact.html" class="solution-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quality Standards Section -->
+  <section class="pharmex-standards section-padding">
+    <div class="container">
+      <h2 class="section-title text-center">Quality Standards</h2>
+      <p class="section-subtitle text-center">Meeting and exceeding global pharmaceutical quality standards</p>
+      <div class="standards-grid">
+        <div class="standard-item">
+          <div class="standard-icon">
+            <i class="fas fa-award"></i>
+          </div>
+          <h3>GMP Certified</h3>
+          <p>Good Manufacturing Practice certified facilities ensuring highest quality standards</p>
+        </div>
+        <div class="standard-item">
+          <div class="standard-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>FDA Approved</h3>
+          <p>Full compliance with FDA regulations and quality requirements</p>
+        </div>
+        <div class="standard-item">
+          <div class="standard-icon">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <h3>ISO Certified</h3>
+          <p>ISO 9001:2015 certified quality management systems</p>
+        </div>
+        <div class="standard-item">
+          <div class="standard-icon">
+            <i class="fas fa-globe"></i>
+          </div>
           <h3>Global Standards</h3>
-          <p>Adherence to GMP and international regulatory requirements for pharmaceutical ingredients.</p>
-        </div>
-        <div class="feature">
-          <h3>Innovation</h3>
-          <p>Continuous investment in R&D to develop innovative pharmaceutical solutions.</p>
+          <p>Adherence to international pharmaceutical quality standards</p>
         </div>
       </div>
     </div>
+  </section>
 
-    <div class="cta-section">
-      <h2>Ready to Enhance Your Pharmaceutical Products?</h2>
-      <p>Partner with us for premium quality pharmaceutical ingredients and expert support.</p>
-      <a href="vendor-registration.html" class="cta-button">Become a Partner</a>
+  <!-- Process Section -->
+  <section class="pharmex-process section-padding">
+    <div class="container">
+        <h2 class="section-title text-center">Our Process</h2>
+        <div class="process-timeline">
+            <div class="timeline-track">
+                <div class="timeline-line"></div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="timeline-number">01</div>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Research & Development</h3>
+                        <p>Comprehensive pharmaceutical research and development</p>
+                        <ul class="timeline-list">
+                            <li>Drug Discovery and Design</li>
+                            <li>Pre-clinical Studies</li>
+                            <li>Clinical Trials</li>
+                            <li>Data Analysis</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="timeline-number">02</div>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Manufacturing</h3>
+                        <p>State-of-the-art manufacturing processes</p>
+                        <ul class="timeline-list">
+                            <li>Quality Control</li>
+                            <li>Process Validation</li>
+                            <li>Batch Production</li>
+                            <li>Quality Assurance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="timeline-number">03</div>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Testing & Validation</h3>
+                        <p>Rigorous testing and validation procedures</p>
+                        <ul class="timeline-list">
+                            <li>Laboratory Testing</li>
+                            <li>Stability Studies</li>
+                            <li>Documentation</li>
+                            <li>Regulatory Compliance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="timeline-number">04</div>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Distribution</h3>
+                        <p>Global distribution and supply chain management</p>
+                        <ul class="timeline-list">
+                            <li>Supply Chain Optimization</li>
+                            <li>Quality Maintenance</li>
+                            <li>Global Logistics</li>
+                            <li>Track and Trace</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="pharmex-stats section-padding">
+    <div class="container">
+      <h2 class="section-title text-center text-white">Our Impact</h2>
+      <p class="section-subtitle text-center text-white">Making a difference in global healthcare</p>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-flask"></i>
+          </div>
+          <div class="stat-number">50+</div>
+          <div class="stat-label">Research Projects</div>
+          <p class="stat-description">Active pharmaceutical research projects</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-industry"></i>
+          </div>
+          <div class="stat-number">10+</div>
+          <div class="stat-label">Manufacturing Units</div>
+          <p class="stat-description">State-of-the-art facilities worldwide</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-globe"></i>
+          </div>
+          <div class="stat-number">100+</div>
+          <div class="stat-label">Countries Served</div>
+          <p class="stat-description">Global presence and distribution</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <div class="stat-number">25+</div>
+          <div class="stat-label">Certifications</div>
+          <p class="stat-description">International quality certifications</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="pharmex-cta section-padding">
+    <div class="container">
+      <div class="cta-content text-center">
+        <h2 class="cta-title">Ready to Transform Healthcare Together?</h2>
+        <p class="cta-subtitle">Join us in advancing pharmaceutical innovation and improving global healthcare</p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="cta-button primary">Contact Us Today</a>
+          <a href="case-studies.html" class="cta-button secondary">View Case Studies</a>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <p>&copy; 2024 P-Ram Energy. All rights reserved.</p>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#solutions">Our Solutions</a></li>
+            <li><a href="#process">Our Process</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#research">Research & Development</a></li>
+            <li><a href="#manufacturing">Manufacturing</a></li>
+            <li><a href="#regulatory">Regulatory Affairs</a></li>
+            <li><a href="consulting.html">Pharmaceutical Consulting</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Help & Support</h4>
+          <ul>
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="support.html">Technical Support</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect With Us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+          <div class="footer-contact">
+            <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+            <p><i class="fas fa-envelope"></i> pharmex@pram-energy.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 P-Ram Energy. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="sitemap.html">Sitemap</a>
+        </div>
+      </div>
+    </div>
   </footer>
 
-  <script>
-    // Add active class to current nav link
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    document.querySelectorAll('.nav-links a').forEach(link => {
-      if (link.getAttribute('href') === currentPage) {
-        link.classList.add('active');
-      }
-    });
-  </script>
+  <script src="scripts.js"></script>
 </body>
 </html>
 ::contentReference[oaicite:3]{index=3}

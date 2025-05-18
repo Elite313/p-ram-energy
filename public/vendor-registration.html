@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vendor Membership | P Ram Energy</title>
+  <title>Vendor Registration - P-Ram Energy</title>
   <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -20,431 +21,343 @@
       <a href="petroleum.html">Petroleum</a>
       <a href="agriculture.html">Agriculture</a>
       <a href="pharmex.html">Pharmex</a>
-      <a href="vendor-registration.html" class="active">Vendor Membership</a>
+      <a href="vendor-registration.html" class="active">Vendor Registration</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
 
   <section class="small-hero">
     <div class="container">
-      <h1>Vendor Membership</h1>
-      <p>Join our exclusive network of trusted partners and suppliers</p>
+      <h1>Join Our Vendor Network</h1>
+      <p>Choose the perfect plan for your business and become part of our global network</p>
     </div>
   </section>
 
-  <section class="registration-form">
-    <div class="container">
-      <div class="form-container">
-        <form id="vendorMembership" onsubmit="showMembershipPlans(event)">
-          <div class="form-section">
-            <h2>1. Company Information</h2>
-            <div class="form-group">
-              <label for="companyName">Company Name *</label>
-              <input type="text" id="companyName" name="companyName" required>
+  <section class="content-section">
+    <!-- Plan Selection Section -->
+    <div id="plan-selection" class="pricing-section">
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>Starter Plan</h3>
+            <div class="price">
+              <span class="amount">$499</span>
+              <span class="period">/year</span>
             </div>
-            <div class="form-group">
-              <label for="businessType">Business Type *</label>
-              <select id="businessType" name="businessType" required>
-                <option value="">Select business type</option>
-                <option value="corporation">Corporation</option>
-                <option value="partnership">Partnership</option>
-                <option value="soleProprietorship">Sole Proprietorship</option>
-                <option value="llc">LLC</option>
-                <option value="llc">Private Limited</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="registrationNumber">Company Registration Number *</label>
-              <input type="text" id="registrationNumber" name="registrationNumber" required>
-            </div>
-            <div class="form-group">
-              <label for="taxId">Tax ID/VAT Number *</label>
-              <input type="text" id="taxId" name="taxId" required>
-            </div>
+            <p>Perfect for small businesses entering the market</p>
           </div>
+          <div class="pricing-features">
+            <ul>
+              <li>✓ Basic vendor profile</li>
+              <li>✓ Access to standard orders</li>
+              <li>✓ Email support</li>
+              <li>✓ Monthly market insights</li>
+              <li>✓ Standard payment terms</li>
+            </ul>
+          </div>
+          <button class="plan-select-btn" data-plan="starter">Select Plan</button>
+        </div>
 
-          <div class="form-section">
-            <h2>2. Additional Information</h2>
-            <div class="form-group">
-              <label for="firstName">First Name *</label>
-              <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+        <div class="pricing-card featured">
+          <div class="pricing-header">
+            <div class="featured-tag">Most Popular</div>
+            <h3>Professional Plan</h3>
+            <div class="price">
+              <span class="amount">$999</span>
+              <span class="period">/year</span>
             </div>
-            <div class="form-group">
-              <label for="lastName">Last Name *</label>
-              <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
-            </div>
-            <div class="form-group">
-              <label for="companyEmail">Company Email *</label>
-              <input type="email" id="companyEmail" name="companyEmail" required>
-            </div>
-            <div class="form-group">
-              <label for="phone">Phone *</label>
-              <input type="tel" id="phone" name="phone" required>
-            </div>
-            <div class="form-group">
-              <label for="dateOfBirth">Date of Birth *</label>
-              <div class="date-inputs">
-                <input type="number" id="day" name="day" placeholder="Day" min="1" max="31" required>
-                <select id="month" name="month" required>
-                  <option value="">Month</option>
-                  <option value="01">January</option>
-                  <option value="02">February</option>
-                  <option value="03">March</option>
-                  <option value="04">April</option>
-                  <option value="05">May</option>
-                  <option value="06">June</option>
-                  <option value="07">July</option>
-                  <option value="08">August</option>
-                  <option value="09">September</option>
-                  <option value="10">October</option>
-                  <option value="11">November</option>
-                  <option value="12">December</option>
-                </select>
-                <input type="number" id="year" name="year" placeholder="Year" min="1900" max="2024" required>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="country">Country/Region *</label>
-              <select id="country" name="country" required>
-                    <option value="">Select your country</option>
-                    <option value="AF">Afghanistan</option>
-                    <option value="AL">Albania</option>
-                    <option value="DZ">Algeria</option>
-                    <option value="AS">American Samoa</option>
-                    <option value="AD">Andorra</option>
-                    <option value="AO">Angola</option>
-                    <option value="AI">Anguilla</option>
-                    <option value="AQ">Antarctica</option>
-                    <option value="AG">Antigua and Barbuda</option>
-                    <option value="AR">Argentina</option>
-                    <option value="AM">Armenia</option>
-                    <option value="AW">Aruba</option>
-                    <option value="AU">Australia</option>
-                    <option value="AT">Austria</option>
-                    <option value="AZ">Azerbaijan</option>
-                    <option value="BS">Bahamas</option>
-                    <option value="BH">Bahrain</option>
-                    <option value="BD">Bangladesh</option>
-                    <option value="BB">Barbados</option>
-                    <option value="BY">Belarus</option>
-                    <option value="BE">Belgium</option>
-                    <option value="BZ">Belize</option>
-                    <option value="BJ">Benin</option>
-                    <option value="BM">Bermuda</option>
-                    <option value="BT">Bhutan</option>
-                    <option value="BO">Bolivia</option>
-                    <option value="BA">Bosnia and Herzegovina</option>
-                    <option value="BW">Botswana</option>
-                    <option value="BR">Brazil</option>
-                    <option value="IO">British Indian Ocean Territory</option>
-                    <option value="BN">Brunei</option>
-                    <option value="BG">Bulgaria</option>
-                    <option value="BF">Burkina Faso</option>
-                    <option value="BI">Burundi</option>
-                    <option value="KH">Cambodia</option>
-                    <option value="CM">Cameroon</option>
-                    <option value="CA">Canada</option>
-                    <option value="CV">Cape Verde</option>
-                    <option value="KY">Cayman Islands</option>
-                    <option value="CF">Central African Republic</option>
-                    <option value="TD">Chad</option>
-                    <option value="CL">Chile</option>
-                    <option value="CN">China</option>
-                    <option value="CO">Colombia</option>
-                    <option value="KM">Comoros</option>
-                    <option value="CG">Congo - Brazzaville</option>
-                    <option value="CD">Congo - Kinshasa</option>
-                    <option value="CR">Costa Rica</option>
-                    <option value="HR">Croatia</option>
-                    <option value="CU">Cuba</option>
-                    <option value="CY">Cyprus</option>
-                    <option value="CZ">Czech Republic</option>
-                    <option value="DK">Denmark</option>
-                    <option value="DJ">Djibouti</option>
-                    <option value="DM">Dominica</option>
-                    <option value="DO">Dominican Republic</option>
-                    <option value="EC">Ecuador</option>
-                    <option value="EG">Egypt</option>
-                    <option value="SV">El Salvador</option>
-                    <option value="GQ">Equatorial Guinea</option>
-                    <option value="ER">Eritrea</option>
-                    <option value="EE">Estonia</option>
-                    <option value="ET">Ethiopia</option>
-                    <option value="FJ">Fiji</option>
-                    <option value="FI">Finland</option>
-                    <option value="FR">France</option>
-                    <option value="GA">Gabon</option>
-                    <option value="GM">Gambia</option>
-                    <option value="GE">Georgia</option>
-                    <option value="DE">Germany</option>
-                    <option value="GH">Ghana</option>
-                    <option value="GR">Greece</option>
-                    <option value="GL">Greenland</option>
-                    <option value="GD">Grenada</option>
-                    <option value="GU">Guam</option>
-                    <option value="GT">Guatemala</option>
-                    <option value="GN">Guinea</option>
-                    <option value="GW">Guinea-Bissau</option>
-                    <option value="GY">Guyana</option>
-                    <option value="HT">Haiti</option>
-                    <option value="HN">Honduras</option>
-                    <option value="HK">Hong Kong SAR</option>
-                    <option value="HU">Hungary</option>
-                    <option value="IS">Iceland</option>
-                    <option value="IN">India</option>
-                    <option value="ID">Indonesia</option>
-                    <option value="IR">Iran</option>
-                    <option value="IQ">Iraq</option>
-                    <option value="IE">Ireland</option>
-                    <option value="IL">Israel</option>
-                    <option value="IT">Italy</option>
-                    <option value="JM">Jamaica</option>
-                    <option value="JP">Japan</option>
-                    <option value="JO">Jordan</option>
-                    <option value="KZ">Kazakhstan</option>
-                    <option value="KE">Kenya</option>
-                    <option value="KI">Kiribati</option>
-                    <option value="KW">Kuwait</option>
-                    <option value="KG">Kyrgyzstan</option>
-                    <option value="LA">Laos</option>
-                    <option value="LV">Latvia</option>
-                    <option value="LB">Lebanon</option>
-                    <option value="LS">Lesotho</option>
-                    <option value="LR">Liberia</option>
-                    <option value="LY">Libya</option>
-                    <option value="LI">Liechtenstein</option>
-                    <option value="LT">Lithuania</option>
-                    <option value="LU">Luxembourg</option>
-                    <option value="MO">Macao SAR</option>
-                    <option value="MG">Madagascar</option>
-                    <option value="MW">Malawi</option>
-                    <option value="MY">Malaysia</option>
-                    <option value="MV">Maldives</option>
-                    <option value="ML">Mali</option>
-                    <option value="MT">Malta</option>
-                    <option value="MH">Marshall Islands</option>
-                    <option value="MR">Mauritania</option>
-                    <option value="MU">Mauritius</option>
-                    <option value="MX">Mexico</option>
-                    <option value="FM">Micronesia</option>
-                    <option value="MD">Moldova</option>
-                    <option value="MC">Monaco</option>
-                    <option value="MN">Mongolia</option>
-                    <option value="ME">Montenegro</option>
-                    <option value="MA">Morocco</option>
-                    <option value="MZ">Mozambique</option>
-                    <option value="MM">Myanmar (Burma)</option>
-                    <option value="NA">Namibia</option>
-                    <option value="NR">Nauru</option>
-                    <option value="NP">Nepal</option>
-                    <option value="NL">Netherlands</option>
-                    <option value="NZ">New Zealand</option>
-                    <option value="NI">Nicaragua</option>
-                    <option value="NE">Niger</option>
-                    <option value="NG">Nigeria</option>
-                    <option value="KP">North Korea</option>
-                    <option value="MK">North Macedonia</option>
-                    <option value="NO">Norway</option>
-                    <option value="OM">Oman</option>
-                    <option value="PK">Pakistan</option>
-                    <option value="PW">Palau</option>
-                    <option value="PS">Palestinian Territories</option>
-                    <option value="PA">Panama</option>
-                    <option value="PG">Papua New Guinea</option>
-                    <option value="PY">Paraguay</option>
-                    <option value="PE">Peru</option>
-                    <option value="PH">Philippines</option>
-                    <option value="PL">Poland</option>
-                    <option value="PT">Portugal</option>
-                    <option value="QA">Qatar</option>
-                    <option value="RO">Romania</option>
-                    <option value="RU">Russia</option>
-                    <option value="RW">Rwanda</option>
-                    <option value="KN">Saint Kitts and Nevis</option>
-                    <option value="LC">Saint Lucia</option>
-                    <option value="VC">Saint Vincent and the Grenadines</option>
-                    <option value="WS">Samoa</option>
-                    <option value="SM">San Marino</option>
-                    <option value="ST">São Tomé and Príncipe</option>
-                    <option value="SA">Saudi Arabia</option>
-                    <option value="SN">Senegal</option>
-                    <option value="RS">Serbia</option>
-                    <option value="SC">Seychelles</option>
-                    <option value="SL">Sierra Leone</option>
-                    <option value="SG">Singapore</option>
-                    <option value="SK">Slovakia</option>
-                    <option value="SI">Slovenia</option>
-                    <option value="SB">Solomon Islands</option>
-                    <option value="SO">Somalia</option>
-                    <option value="ZA">South Africa</option>
-                    <option value="KR">South Korea</option>
-                    <option value="SS">South Sudan</option>
-                    <option value="ES">Spain</option>
-                    <option value="LK">Sri Lanka</option>
-                    <option value="SD">Sudan</option>
-                    <option value="SR">Suriname</option>
-                    <option value="SE">Sweden</option>
-                    <option value="CH">Switzerland</option>
-                    <option value="SY">Syria</option>
-                    <option value="TW">Taiwan</option>
-                    <option value="TJ">Tajikistan</option>
-                    <option value="TZ">Tanzania</option>
-                    <option value="TH">Thailand</option>
-                    <option value="TL">Timor-Leste</option>
-                    <option value="TG">Togo</option>
-                    <option value="TO">Tonga</option>
-                    <option value="TT">Trinidad and Tobago</option>
-                    <option value="TN">Tunisia</option>
-                    <option value="TR">Turkey</option>
-                    <option value="TM">Turkmenistan</option>
-                    <option value="TV">Tuvalu</option>
-                    <option value="UG">Uganda</option>
-                    <option value="UA">Ukraine</option>
-                    <option value="AE">United Arab Emirates</option>
-                    <option value="GB">United Kingdom</option>
-                    <option value="US">United States</option>
-                    <option value="UY">Uruguay</option>
-                    <option value="UZ">Uzbekistan</option>
-                    <option value="VU">Vanuatu</option>
-                    <option value="VA">Vatican City</option>
-                    <option value="VE">Venezuela</option>
-                    <option value="VN">Vietnam</option>
-                    <option value="YE">Yemen</option>
-                    <option value="ZM">Zambia</option>
-                    <option value="ZW">Zimbabwe</option>               
-                <!-- Add more countries as needed -->
-              </select>
-            </div>
+            <p>Ideal for growing businesses seeking expansion</p>
           </div>
+          <div class="pricing-features">
+            <ul>
+              <li>✓ Enhanced vendor profile</li>
+              <li>✓ Priority order access</li>
+              <li>✓ 24/7 phone support</li>
+              <li>✓ Weekly market insights</li>
+              <li>✓ Flexible payment terms</li>
+              <li>✓ Dedicated account manager</li>
+            </ul>
+          </div>
+          <button class="plan-select-btn featured" data-plan="professional">Select Plan</button>
+        </div>
 
-          <div class="form-section">
-            <h2>3. Business Details</h2>
-            <div class="form-group">
-              <label for="division">Division of Interest *</label>
-              <select id="division" name="division" required>
-                <option value="">Select division</option>
-                <option value="petroleum">Petroleum & Petrochemicals</option>
-                <option value="agriculture">Agriculture</option>
-                <option value="pharmex">Pharmex</option>
-              </select>
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>Enterprise Plan</h3>
+            <div class="price">
+              <span class="amount">Custom</span>
+              <span class="period">pricing</span>
             </div>
-            <div class="form-group">
-              <label for="products">Products/Services Offered *</label>
-              <textarea id="products" name="products" rows="4" required></textarea>
-            </div>
-            <div class="form-group">
-              <label for="experience">Years of Experience *</label>
-              <input type="number" id="experience" name="experience" min="0" required>
-            </div>
+            <p>For large organizations with specific requirements</p>
           </div>
-
-          <div class="form-section">
-            <h2>4. Documents</h2>
-            <div class="form-group">
-              <label for="businessLicense">Business License *</label>
-              <input type="file" id="businessLicense" name="businessLicense" accept=".pdf,.doc,.docx" required>
-            </div>
-            <div class="form-group">
-              <label for="taxCertificate">Tax Certificate *</label>
-              <input type="file" id="taxCertificate" name="taxCertificate" accept=".pdf,.doc,.docx" required>
-            </div>
+          <div class="pricing-features">
+            <ul>
+              <li>✓ Custom vendor solutions</li>
+              <li>✓ Premium order priority</li>
+              <li>✓ 24/7 dedicated support</li>
+              <li>✓ Real-time market analytics</li>
+              <li>✓ Custom payment terms</li>
+              <li>✓ Strategic partnership benefits</li>
+            </ul>
           </div>
-
-          <div class="form-group terms">
-            <input type="checkbox" id="terms" name="terms" required>
-            <label for="terms">I agree to the Terms and Conditions and Privacy Policy *</label>
-          </div>
-
-          <div class="form-actions">
-            <button type="submit" class="btn yellow-btn">Continue to Membership Plans</button>
-            <button type="reset" class="btn white-outline-btn">Reset Form</button>
-          </div>
-        </form>
+          <button class="plan-select-btn" data-plan="enterprise">Contact Sales</button>
+        </div>
       </div>
+    </div>
+
+    <!-- Registration Form Section (Initially Hidden) -->
+    <div id="registration-form" class="form-container" style="display: none;">
+      <div class="form-header">
+        <h2>Complete Your Registration</h2>
+        <p>You selected: <span id="selected-plan">Professional Plan</span></p>
+      </div>
+      <form id="vendor-form" enctype="multipart/form-data">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="company-name">Company Name*</label>
+            <input type="text" id="company-name" name="companyName" required minlength="2" maxlength="100">
+            <div class="error-message"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="business-type">Business Type*</label>
+            <select id="business-type" name="businessType" required>
+              <option value="">Select Business Type</option>
+              <option value="manufacturer">Manufacturer</option>
+              <option value="distributor">Distributor</option>
+              <option value="supplier">Supplier</option>
+              <option value="service-provider">Service Provider</option>
+            </select>
+            <div class="error-message"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-name">Contact Person Name*</label>
+            <input type="text" id="contact-name" name="contactName" required minlength="2" maxlength="100">
+            <div class="error-message"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Business Email*</label>
+            <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            <div class="error-message"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number*</label>
+            <input type="tel" id="phone" name="phone" required pattern="[0-9+\-\s()]{10,20}">
+            <div class="error-message"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="country">Country*</label>
+            <select id="country" name="country" required>
+              <option value="">Select Country</option>
+              <option value="us">United States</option>
+              <option value="uk">United Kingdom</option>
+              <option value="ca">Canada</option>
+              <option value="au">Australia</option>
+            </select>
+            <div class="error-message"></div>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="services">Services Offered*</label>
+            <select id="services" name="services" multiple required>
+              <option value="petroleum">Petroleum Products</option>
+              <option value="agriculture">Agricultural Solutions</option>
+              <option value="pharmex">Pharmaceutical Ingredients</option>
+            </select>
+            <div class="error-message"></div>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="description">Business Description</label>
+            <textarea id="description" name="description" rows="4" maxlength="500"></textarea>
+            <div class="error-message"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="business-license">Business License* (PDF or Image)</label>
+            <input type="file" id="business-license" name="businessLicense" accept=".pdf,.jpg,.jpeg,.png" required>
+            <div class="error-message"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="tax-certificate">Tax Certificate* (PDF or Image)</label>
+            <input type="file" id="tax-certificate" name="taxCertificate" accept=".pdf,.jpg,.jpeg,.png" required>
+            <div class="error-message"></div>
+          </div>
+        </div>
+
+        <div class="form-footer">
+          <button type="button" class="secondary-btn" onclick="showPlanSelection()">Back to Plans</button>
+          <button type="submit" class="submit-btn">
+            <span class="btn-text">Submit Registration</span>
+            <span class="spinner" style="display: none;"></span>
+          </button>
+        </div>
+      </form>
     </div>
   </section>
-
-  <!-- Membership Plans Popup Overlay -->
-  <div id="membershipPlansOverlay" class="overlay">
-    <div class="popup-content">
-      <h2>Select Your Membership Plan</h2>
-      <div class="membership-plans">
-        <div class="plan" onclick="selectPlan('silver')">
-          <h3>Silver</h3>
-          <div class="price">$799</div>
-          <ul>
-            <li>Basic vendor listing</li>
-            <li>Standard support</li>
-            <li>Monthly newsletters</li>
-            <li>Access to basic tenders</li>
-          </ul>
-          <button class="btn yellow-btn">Select Silver</button>
-        </div>
-
-        <div class="plan featured" onclick="selectPlan('gold')">
-          <div class="featured-tag">Most Popular</div>
-          <h3>Gold</h3>
-          <div class="price">$999</div>
-          <ul>
-            <li>Premium vendor listing</li>
-            <li>Priority support</li>
-            <li>Weekly industry updates</li>
-            <li>Access to all tenders</li>
-            <li>Quarterly business review</li>
-          </ul>
-          <button class="btn yellow-btn">Select Gold</button>
-        </div>
-
-        <div class="plan" onclick="selectPlan('platinum')">
-          <h3>Platinum</h3>
-          <div class="price">$1,999</div>
-          <ul>
-            <li>Featured vendor listing</li>
-            <li>24/7 dedicated support</li>
-            <li>Daily industry insights</li>
-            <li>Priority access to tenders</li>
-            <li>Monthly business review</li>
-            <li>Exclusive networking events</li>
-          </ul>
-          <button class="btn yellow-btn">Select Platinum</button>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <footer class="main-footer">
     <p>© 2025 P Ram Energy Private Limited. All rights reserved.</p>
   </footer>
 
   <script>
-    function showMembershipPlans(event) {
-      event.preventDefault();
-      document.getElementById('membershipPlansOverlay').style.display = 'flex';
+    // Add active class to current nav link
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      if (link.getAttribute('href') === currentPage) {
+        link.classList.add('active');
+      }
+    });
+
+    // Plan selection and form visibility handling
+    const planSelection = document.getElementById('plan-selection');
+    const registrationForm = document.getElementById('registration-form');
+    const selectedPlanText = document.getElementById('selected-plan');
+    let selectedPlan = '';
+
+    document.querySelectorAll('.plan-select-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        const plan = this.getAttribute('data-plan');
+        if (plan === 'enterprise') {
+          window.location.href = 'contact.html';
+          return;
+        }
+        
+        selectedPlan = plan;
+        selectedPlanText.textContent = plan.charAt(0).toUpperCase() + plan.slice(1) + ' Plan';
+        planSelection.style.display = 'none';
+        registrationForm.style.display = 'block';
+        window.scrollTo(0, 0);
+      });
+    });
+
+    function showPlanSelection() {
+      planSelection.style.display = 'block';
+      registrationForm.style.display = 'none';
+      window.scrollTo(0, 0);
     }
 
-    async function submitForm(formData) {
-      const response = await fetch('/api/vendors/register', {
-        method: 'POST',
-        body: formData
-      });
-      const data = await response.json();
-      return data.vendorId;
+    // Form validation and submission
+    const form = document.getElementById('vendor-form');
+    const submitBtn = form.querySelector('.submit-btn');
+    const btnText = submitBtn.querySelector('.btn-text');
+    const spinner = submitBtn.querySelector('.spinner');
+
+    // Show error message
+    function showError(input, message) {
+      const errorDiv = input.nextElementSibling;
+      errorDiv.textContent = message;
+      input.classList.add('error');
     }
 
-    async function selectPlan(plan) {
-      const response = await fetch('/api/payments/create-payment-intent', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          plan,
-          vendorId: currentVendorId
-        })
-      });
-      const { clientSecret } = await response.json();
-      // Initialize Stripe payment
+    // Clear error message
+    function clearError(input) {
+      const errorDiv = input.nextElementSibling;
+      errorDiv.textContent = '';
+      input.classList.remove('error');
     }
+
+    // Validate form fields
+    function validateField(input) {
+      clearError(input);
+
+      if (input.hasAttribute('required') && !input.value) {
+        showError(input, 'This field is required');
+        return false;
+      }
+
+      if (input.type === 'email' && input.value) {
+        const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (!emailPattern.test(input.value)) {
+          showError(input, 'Please enter a valid email address');
+          return false;
+        }
+      }
+
+      if (input.type === 'tel' && input.value) {
+        const phonePattern = /^[0-9+\-\s()]{10,20}$/;
+        if (!phonePattern.test(input.value)) {
+          showError(input, 'Please enter a valid phone number');
+          return false;
+        }
+      }
+
+      if (input.type === 'file' && input.hasAttribute('required')) {
+        if (!input.files || !input.files[0]) {
+          showError(input, 'Please upload a file');
+          return false;
+        }
+        const file = input.files[0];
+        if (file.size > 5 * 1024 * 1024) { // 5MB limit
+          showError(input, 'File size must be less than 5MB');
+          return false;
+        }
+      }
+
+      return true;
+    }
+
+    // Handle form submission
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      
+      // Validate all fields
+      let isValid = true;
+      form.querySelectorAll('input, select, textarea').forEach(input => {
+        if (!validateField(input)) {
+          isValid = false;
+        }
+      });
+
+      if (!isValid) {
+        return;
+      }
+
+      // Show loading state
+      submitBtn.disabled = true;
+      btnText.style.display = 'none';
+      spinner.style.display = 'inline-block';
+
+      try {
+        const formData = new FormData(form);
+        formData.append('plan', selectedPlan);
+
+        const response = await fetch('/api/vendors/register', {
+          method: 'POST',
+          body: formData
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+          alert('Registration successful! We will review your application and contact you soon.');
+          window.location.href = 'index.html';
+        } else {
+          throw new Error(data.message || 'Registration failed. Please try again.');
+        }
+      } catch (error) {
+        alert(error.message);
+        // Reset button state
+        submitBtn.disabled = false;
+        btnText.style.display = 'inline-block';
+        spinner.style.display = 'none';
+      }
+    });
+
+    // Real-time validation
+    form.querySelectorAll('input, select, textarea').forEach(input => {
+      input.addEventListener('blur', () => validateField(input));
+      input.addEventListener('input', () => {
+        if (input.classList.contains('error')) {
+          validateField(input);
+        }
+      });
+    });
   </script>
 
 </body>
